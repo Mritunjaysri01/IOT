@@ -1,0 +1,21 @@
+#include<LiquidCrystal.h>
+const int rs=13,en=12,d4=7,d5=6,d6=5,d7=4;
+LiquidCrystal lcd(rs,en,d4,d5,d6,d7);
+void setup() {
+  // put your setup code here, to run once:
+lcd.begin(16,2);
+lcd.write("AA");
+
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+//lcd.clear();
+delay(200);
+
+lcd.scrollDisplayRight();
+
+delay(200);
+
+}
